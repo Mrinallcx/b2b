@@ -6,57 +6,57 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 43 74% 52%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 43 74% 52%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 15%;
-    --ring: 43 74% 52%;
+    --border: 0 0% 90%;
+    --input: 0 0% 94%;
+    --ring: 43 74% 49%;
 
     --radius: 0.5rem;
 
     /* Custom colors */
-    --gold: 43 74% 52%;
-    --gold-light: 43 74% 62%;
-    --gold-dark: 43 74% 42%;
+    --gold: 43 74% 49%;
+    --gold-light: 43 74% 55%;
+    --gold-dark: 43 74% 40%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43, 74%, 52%), hsl(43, 74%, 42%));
-    --gradient-dark: linear-gradient(180deg, hsl(0, 0%, 0%), hsl(0, 0%, 5%));
+    --gradient-gold: linear-gradient(135deg, hsl(43, 74%, 49%), hsl(43, 74%, 40%));
+    --gradient-light: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
 
     /* Shadows */
-    --shadow-gold: 0 4px 20px -4px hsl(43, 74%, 52%, 0.3);
-    --shadow-card: 0 4px 24px -8px hsl(0, 0%, 0%, 0.5);
+    --shadow-gold: 0 4px 20px -4px hsl(43, 74%, 49%, 0.3);
+    --shadow-card: 0 4px 24px -8px hsl(0, 0%, 0%, 0.08);
 
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 43 74% 52%;
-    --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 0 0% 10%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 43 74% 52%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 43 74% 49%;
   }
 }
 
