@@ -1,19 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Info } from "lucide-react";
+import { Lock, Info } from "lucide-react";
 
 const terms = [
-  { label: "Security Type", value: "Digital Security Token" },
-  { label: "Underlying Asset", value: "Physical Copper" },
-  { label: "Minimum Investment", value: "$1,000" },
-  { label: "Target Raise", value: "$50,000,000" },
-  { label: "Token Price", value: "$100 per token" },
-  { label: "Projected Yield", value: "8.5% p.a." },
-  { label: "Investment Term", value: "24 months" },
-  { label: "Distribution", value: "Quarterly" },
-  { label: "Custody", value: "LME-Approved Warehouse" },
-  { label: "Auditor", value: "Deloitte & Touche" },
-  { label: "Legal Structure", value: "Reg D 506(c)" },
-  { label: "Investor Type", value: "Accredited Only" },
+  { label: "Issuer", value: "NYSE-Listed Mining Company (Confidential)" },
+  { label: "Asset Type", value: "In-Ground Copper Reserves" },
+  { label: "Token Name", value: "COPTT" },
+  { label: "Token Standard", value: "ERC-20 (Ethereum)" },
+  { label: "Total Supply", value: "300,000,000" },
+  { label: "Unit Representation", value: "1 lb LME Grade A Copper" },
+  { label: "Offering Price", value: "30% Discount to Futures" },
+  { label: "Example Price", value: "$5.80/lb futures → $4.06/COPTT" },
+  { label: "Redemption Term", value: "48 Months (Amortized)" },
+  { label: "Physical Settlement", value: "Optional (Warehouse Warrants)" },
+  { label: "Investor Eligibility", value: "Accredited / Institutional Only" },
+  { label: "Compliance", value: "KYC/AML Required" },
+  { label: "Jurisdiction", value: "Details Confidential" },
 ];
 
 const InvestmentTermsCard = () => {
@@ -41,11 +42,11 @@ const InvestmentTermsCard = () => {
       {/* CTA Section */}
       <div className="p-4 bg-secondary/30 border-t border-border">
         <Button variant="hero" className="w-full mb-3">
-          Invest Now
-          <ArrowRight className="w-4 h-4" />
+          <Lock className="w-4 h-4" />
+          Request Access
         </Button>
         <Button variant="outline" className="w-full">
-          Download Term Sheet
+          Download Overview
         </Button>
         
         <div className="flex items-start gap-2 mt-4 p-3 bg-background rounded-lg">

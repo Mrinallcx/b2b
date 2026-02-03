@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatsBar from "@/components/StatsBar";
 import ValueProposition from "@/components/ValueProposition";
+import ProductPreviewCard from "@/components/ProductPreviewCard";
 import CurrentOfferings from "@/components/CurrentOfferings";
-import TechnologySection from "@/components/TechnologySection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 
@@ -47,8 +47,8 @@ const Index = () => {
         <HeroSection />
         <StatsBar />
         <ValueProposition />
+        <ProductPreviewCard />
         <CurrentOfferings />
-        <TechnologySection />
         <AboutSection />
       </main>
       <Footer />

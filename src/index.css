@@ -41,6 +41,10 @@
     --gold-light: 43 74% 55%;
     --gold-dark: 43 74% 40%;
 
+    /* CTA - dark for all call-to-action buttons only */
+    --cta: 0 0% 12%;
+    --cta-foreground: 0 0% 100%;
+
     /* Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(43, 74%, 49%), hsl(43, 74%, 40%));
     --gradient-light: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));

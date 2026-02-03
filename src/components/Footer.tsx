@@ -32,12 +32,9 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-primary-foreground font-semibold text-sm">N</span>
-              </div>
-              <span className="font-light text-lg tracking-tight">Nexus</span>
-            </div>
+            <a href="/" className="inline-block mb-4">
+              <img src="/mainlogo.svg" alt="Toto Finance" className="h-10 w-auto" />
+            </a>
             <p className="text-sm text-muted-foreground">
               Building the future of enterprise infrastructure.
             </p>
@@ -115,7 +112,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 Nexus Technologies. All rights reserved.
+            © 2026 Toto Finance Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-300">

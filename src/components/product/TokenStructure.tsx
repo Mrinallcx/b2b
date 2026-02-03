@@ -1,26 +1,40 @@
-import { ArrowRight } from "lucide-react";
-
-const structureItems = [
+const subsections = [
   {
-    step: "01",
-    title: "Asset Acquisition",
-    description: "Physical copper is purchased from certified suppliers and stored in LME-approved warehouses."
+    title: "Minting",
+    points: [
+      "Token Standard: ERC-20 on Ethereum",
+      "Total Supply: 300,000,000 tokens (capped)",
+      "Initial Allocation: 100% held by mine owner for supply control and compliance",
+      "Pricing Mechanism: Oracle-based futures pricing",
+    ],
   },
   {
-    step: "02",
-    title: "Token Issuance",
-    description: "Digital security tokens are minted on the blockchain, each representing fractional ownership."
+    title: "Pricing Model",
+    points: [
+      "Tokens offered at 30% discount to copper futures",
+      "Example: If futures trade at $5.80/lb → COPTT price is $4.06",
+      "Full sale potential: ~$1.06 Billion USD",
+      "Real-time oracle integration maintains market transparency",
+    ],
   },
   {
-    step: "03",
-    title: "Smart Contract",
-    description: "Automated distribution of yields and transparent tracking of underlying assets."
+    title: "Redemption",
+    points: [
+      "48-month amortized redemption aligned with mine production schedules",
+      "Buyback at spot price provides liquidity and downside protection",
+      "Optional physical settlement via warehouse warrants",
+      "Tokens burned upon redemption — deflationary mechanism",
+    ],
   },
   {
-    step: "04",
-    title: "Secondary Trading",
-    description: "Tokens can be traded on regulated exchanges, providing liquidity to investors."
-  }
+    title: "Compliance & Operations",
+    points: [
+      "KYC/AML onboarding with accredited investor verification",
+      "Mining company provides geological certification",
+      "Ongoing production reporting and transparency",
+      "Partnership merges established mining standards with secure digital asset issuance",
+    ],
+  },
 ];
 
 const TokenStructure = () => {
@@ -29,42 +43,46 @@ const TokenStructure = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
-            Token <span className="text-gradient-gold">Structure</span>
+            Token Structure <span className="text-gradient-gold">& Mechanics</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Understanding how our tokenized copper investment works from acquisition to trading.
-          </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="relative">
-            {/* Vertical line connector */}
-            <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-border hidden md:block" />
-            
-            <div className="space-y-8">
-              {structureItems.map((item, index) => (
-                <div 
-                  key={index}
-                  className="relative flex gap-6 md:gap-8 animate-slide-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Step number */}
-                  <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-light text-lg md:text-xl relative z-10">
-                    {item.step}
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="flex-1 pb-8">
-                    <h3 className="text-xl font-medium mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.description}</p>
-                    
-                    {index < structureItems.length - 1 && (
-                      <ArrowRight className="w-5 h-5 text-primary mt-4 hidden md:block rotate-90" />
-                    )}
+        <div className="max-w-3xl mx-auto relative">
+          {/* Vertical timeline line - runs through center of nodes */}
+          <div className="absolute left-[1.875rem] md:left-7 top-8 bottom-8 w-px bg-primary/30" />
+
+          <div className="space-y-0">
+            {subsections.map((subsection, index) => (
+              <div
+                key={index}
+                className="relative flex gap-6 md:gap-8 pb-14 last:pb-0 animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Timeline node - sits on the line */}
+                <div className="relative z-10 flex-shrink-0">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-medium text-sm md:text-base ring-4 ring-card">
+                    {String(index + 1).padStart(2, "0")}
                   </div>
                 </div>
-              ))}
-            </div>
+
+                {/* Content card */}
+                <div className="flex-1 min-w-0 pt-0.5">
+                  <div className="p-6 bg-background rounded-lg border border-border hover:border-primary/30 transition-all duration-300">
+                    <h3 className="text-lg font-medium mb-4 text-primary">
+                      {subsection.title}
+                    </h3>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      {subsection.points.map((point, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-primary mt-1.5 shrink-0">•</span>
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

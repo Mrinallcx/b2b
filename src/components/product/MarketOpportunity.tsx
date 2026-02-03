@@ -1,54 +1,40 @@
-import { TrendingUp, Factory, Zap, Car } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 
 const marketMetrics = [
-  { value: "$250B", label: "Global Copper Market Size", growth: "+5.2% CAGR" },
-  { value: "28M", label: "Tonnes Annual Demand", growth: "+3.8% YoY" },
-  { value: "$9,500", label: "Current Price per Tonne", growth: "+12% YTD" },
-  { value: "2030", label: "Supply Deficit Projected", growth: "10M Tonnes" },
+  { value: "$5B", label: "Current Tokenized Commodity Market", growth: "Market cap" },
+  { value: "$2B+", label: "COPTT Launch Target", growth: "Target raise" },
+  { value: "$25T+", label: "Global Commodity TAM", growth: "Total addressable" },
 ];
 
 const demandDrivers = [
-  {
-    icon: Zap,
-    title: "Renewable Energy",
-    stat: "40%",
-    description: "Increase in copper demand from solar and wind installations by 2030."
-  },
-  {
-    icon: Car,
-    title: "Electric Vehicles",
-    stat: "4x",
-    description: "More copper used in EVs compared to traditional combustion vehicles."
-  },
-  {
-    icon: Factory,
-    title: "Infrastructure",
-    stat: "$1.2T",
-    description: "Global infrastructure spending driving industrial copper demand."
-  },
-  {
-    icon: TrendingUp,
-    title: "Supply Constraints",
-    stat: "-15%",
-    description: "Decline in new copper mine discoveries over the past decade."
-  },
+  { title: "AI", description: "Data centers and AI infrastructure driving copper demand." },
+  { title: "Energy", description: "Energy transition and renewables scaling copper use." },
+  { title: "EVs", description: "Electric vehicles and charging networks boosting copper demand." },
 ];
 
 const MarketOpportunity = () => {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
+        <div className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4 text-left">
             Market <span className="text-gradient-gold">Opportunity</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Copper is at the center of the global energy transition, creating unprecedented investment potential.
-          </p>
+          <div className="text-muted-foreground max-w-2xl space-y-4 text-left">
+            <p>
+              The global tokenized commodities market currently has a total market cap of approximately $5 billion — dominated by tokenized gold products. Copper and base metals remain largely untapped.
+            </p>
+            <p>
+              At a $1 billion launch, COPTT would instantly rank as the #3 tokenized commodity globally. At $2 billion, COPTT becomes #1 on day one.
+            </p>
+            <p>
+              With copper demand surging due to AI infrastructure, data centers, EVs, and the global energy transition, COPTT offers institutional investors early access to a strategic asset class at a significant discount.
+            </p>
+          </div>
         </div>
 
         {/* Key Market Metrics */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {marketMetrics.map((metric, index) => (
             <div 
               key={index}
@@ -68,19 +54,15 @@ const MarketOpportunity = () => {
         </div>
 
         {/* Demand Drivers */}
-        <div className="max-w-5xl mx-auto">
-          <h3 className="text-xl font-medium text-center mb-8">Key Demand Drivers</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-5xl">
+          <h3 className="text-xl font-medium text-left mb-8">Key Demand Drivers</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {demandDrivers.map((driver, index) => (
               <div 
                 key={index}
                 className="group text-center p-6 bg-card border border-border rounded-lg hover:border-primary/30 transition-all duration-300"
               >
-                <div className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <driver.icon className="w-7 h-7 text-primary" />
-                </div>
-                <div className="text-3xl font-light text-gradient-gold mb-2">{driver.stat}</div>
-                <h4 className="text-sm font-medium mb-2">{driver.title}</h4>
+                <h4 className="text-xl font-medium text-primary mb-2">{driver.title}</h4>
                 <p className="text-xs text-muted-foreground">{driver.description}</p>
               </div>
             ))}

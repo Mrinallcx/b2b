@@ -1,30 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Database, Cloud, Code, BarChart } from "lucide-react";
+import { ArrowRight, Layers, CircleDollarSign, Package } from "lucide-react";
 
 const offerings = [
   {
-    icon: Database,
-    title: "Data Infrastructure",
-    description: "Scalable data solutions that grow with your business. From data lakes to real-time analytics.",
-    features: ["Real-time processing", "Auto-scaling", "99.99% availability"]
+    icon: Layers,
+    title: "Toto Rails",
+    description: "Smart-contract engine for secure, programmable tokenization with built-in compliance and automated workflows.",
+    features: [] as string[]
   },
   {
-    icon: Cloud,
-    title: "Cloud Services",
-    description: "Enterprise cloud infrastructure optimized for performance, security, and cost efficiency.",
-    features: ["Multi-cloud support", "Hybrid deployment", "Edge computing"]
+    icon: CircleDollarSign,
+    title: "Toto Clear",
+    description: "Instant stablecoin settlement layer enabling seamless fiat-to-crypto conversion and real-time transaction finality.",
+    features: [] as string[]
   },
   {
-    icon: Code,
-    title: "API Platform",
-    description: "Build, deploy, and manage APIs at scale with our comprehensive API management platform.",
-    features: ["Rate limiting", "Analytics", "Developer portal"]
-  },
-  {
-    icon: BarChart,
-    title: "Business Intelligence",
-    description: "Transform data into actionable insights with our AI-powered analytics suite.",
-    features: ["Predictive analytics", "Custom dashboards", "Automated reporting"]
+    icon: Package,
+    title: "Toto Logistics",
+    description: "Custody and redemption infrastructure linking digital tokens to physical assets — including warehouse warrants and delivery coordination.",
+    features: [] as string[]
   }
 ];
 
@@ -33,20 +27,17 @@ const CurrentOfferings = () => {
     <section id="services" className="py-24 bg-card">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-            Our Services
-          </span>
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
-            Current Offerings
+            Proprietary Tokenization Infrastructure
           </h2>
           <p className="text-muted-foreground">
-            Comprehensive solutions designed to accelerate your digital transformation journey.
+            Toto Finance operates a vertically integrated technology stack purpose-built for real-world asset tokenization — combining compliance, settlement, custody, and redemption into a unified blockchain-powered system.
           </p>
         </div>
 
         {/* Offerings Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {offerings.map((offering, index) => (
             <div 
               key={index}
@@ -61,16 +52,18 @@ const CurrentOfferings = () => {
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                     {offering.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {offering.features.map((feature, idx) => (
-                      <span 
-                        key={idx}
-                        className="text-xs px-3 py-1 bg-secondary rounded-full text-muted-foreground"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
+                  {offering.features.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {offering.features.map((feature, idx) => (
+                        <span 
+                          key={idx}
+                          className="text-xs px-3 py-1 bg-secondary rounded-full text-muted-foreground"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   <Button variant="link" className="p-0 h-auto text-primary hover:text-gold-light">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </Button>

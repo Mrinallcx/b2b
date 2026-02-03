@@ -14,39 +14,26 @@ const LegalDisclaimer = () => {
 
           <div className="space-y-4 text-sm text-muted-foreground">
             <p>
-              <strong className="text-foreground">Important Notice:</strong> This website and its contents are provided for 
-              informational purposes only and do not constitute an offer to sell, a solicitation of an offer to buy, or a 
-              recommendation of any security or any other product or service by Nexus Technologies or any third party 
-              regardless of whether such security, product or service is referenced herein.
+              This offering is available exclusively to accredited and institutional investors. Investment in tokenized assets involves significant risks, including the potential total loss of invested capital.
             </p>
 
             <p>
-              <strong className="text-foreground">Accredited Investors Only:</strong> Securities offered through this platform 
-              are available exclusively to accredited investors as defined under Regulation D of the Securities Act of 1933. 
-              Verification of accredited investor status is required before investment.
+              This material does not constitute an offer or solicitation in any jurisdiction where such offers are prohibited. Prospective investors should conduct their own due diligence and consult with qualified financial, legal, and tax advisors before making any investment decision.
             </p>
 
             <p>
-              <strong className="text-foreground">Risk Factors:</strong> All investments involve risk, including the loss of 
-              principal. The value of copper and copper-backed securities can fluctuate significantly due to market conditions, 
-              geopolitical events, and other factors. There is no guarantee that any investment objective will be achieved.
+              Details regarding the mining partner and specific project information are confidential and available upon request following investor verification.
             </p>
+          </div>
 
+          <div className="pt-6 mt-6 border-t border-border text-xs text-muted-foreground space-y-2">
+            <p>© 2026 Toto Finance Inc. Strictly Confidential.</p>
             <p>
-              <strong className="text-foreground">No Investment Advice:</strong> Nothing contained herein constitutes investment, 
-              legal, tax, or other advice nor is to be relied upon in making an investment decision. Prospective investors should 
-              consult their own legal, tax, and financial advisors before making any investment.
-            </p>
-
-            <p>
-              <strong className="text-foreground">Forward-Looking Statements:</strong> Certain statements on this website may be 
-              forward-looking statements that involve risks and uncertainties. Actual results may differ materially from those 
-              projected. Past performance is not indicative of future results.
-            </p>
-
-            <p className="pt-4 border-t border-border text-xs">
-              © 2024 Nexus Technologies. All rights reserved. Securities offered through registered broker-dealers. 
-              Member FINRA/SIPC. Please review the offering circular and related risk factors before investing.
+              <a href="https://totofinance.co" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">TotoFinance.co</a>
+              {" | "}
+              <a href="https://twitter.com/TotoFinance" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">@TotoFinance</a>
+              {" | "}
+              Contact: <a href="mailto:investor@totofinance.co" className="text-primary hover:underline">investor@totofinance.co</a>
             </p>
           </div>
         </div>

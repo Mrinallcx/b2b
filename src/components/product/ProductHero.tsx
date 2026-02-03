@@ -19,33 +19,36 @@ const ProductHero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full mb-8 animate-fade-in">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-xs text-muted-foreground">Investment Opportunity</span>
+          {/* Tags / Badges */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-8 animate-fade-in">
+            {["Base Metal", "In-Ground Reserves", "NYSE-Listed Partner", "Live Offering"].map((tag) => (
+              <div key={tag} className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="text-xs text-muted-foreground">{tag}</span>
+              </div>
+            ))}
           </div>
 
           {/* Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6 animate-slide-up">
-            Copper-Backed
-            <span className="block text-gradient-gold mt-2">Digital Securities</span>
+            <span className="text-gradient-gold">$COPTT</span>
+            <span className="block mt-2">Tokenized Copper Reserve</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            A tokenized investment vehicle providing direct exposure to physical copper assets 
-            with institutional-grade security and transparent blockchain verification.
+            A tokenized forward sale of in-ground copper reserves, giving institutional investors discounted, transparent, on-chain exposure to future copper production. Backed by geological certification, regulatory compliance, and optional physical redemption.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <Button variant="hero" size="xl">
-              Request Investment Deck
+              Request Access
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="outline" size="xl">
               <FileText className="w-5 h-5" />
-              View Whitepaper
+              Download Investment Overview (PDF)
             </Button>
           </div>
         </div>

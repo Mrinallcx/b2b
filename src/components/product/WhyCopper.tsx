@@ -14,33 +14,38 @@ const WhyCopper = () => {
     <section className="py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
-            <div>
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
-                Why <span className="text-gradient-gold">Copper?</span>
-              </h2>
-              <p className="text-muted-foreground mb-8">
-                Copper is often called "Dr. Copper" due to its ability to predict economic trends. 
-                As the world transitions to clean energy, copper demand is set to outpace supply, 
-                creating a compelling investment thesis.
-              </p>
+          {/* Title */}
+          <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
+            Why <span className="text-gradient-gold">Copper?</span>
+          </h2>
 
-              <ul className="space-y-4">
-                {reasons.map((reason, index) => (
-                  <li 
-                    key={index}
-                    className="flex items-start gap-3 animate-slide-up"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-muted-foreground">{reason}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Description - full width at top */}
+          <div className="text-muted-foreground mb-12 space-y-4">
+            <p>
+              Copper is the backbone of modern infrastructure. AI data centers, electric vehicles, renewable energy systems, and grid expansion all require massive amounts of copper. Supply constraints and surging demand make copper one of the most strategic commodities of the decade.
+            </p>
+            <p>
+              COPTT provides a unique opportunity to gain exposure to in-ground copper reserves at a discount — before extraction, before market pricing, and with the security of tokenized, transparent ownership.
+            </p>
+          </div>
 
-            {/* Visual / Stats Card */}
+          {/* Pointers & Cu card side by side */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Pointers */}
+            <ul className="space-y-4">
+              {reasons.map((reason, index) => (
+                <li 
+                  key={index}
+                  className="flex items-start gap-3 animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-muted-foreground">{reason}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Cu Stats Card */}
             <div className="bg-background border border-border rounded-lg p-8">
               <div className="text-center mb-8">
                 <div className="text-5xl md:text-6xl font-light text-gradient-gold mb-2">Cu</div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -7,10 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
-              <span className="text-primary-foreground font-semibold text-sm">N</span>
-            </div>
-            <span className="font-light text-lg tracking-tight">Nexus</span>
+            <img src="/mainlogo.svg" alt="Toto Finance" className="h-10 w-auto" />
           </a>
 
           {/* Navigation */}
@@ -33,8 +31,8 @@ const Header = () => {
           </nav>
 
           {/* CTA */}
-          <Button variant="goldOutline" size="sm">
-            Get Started
+          <Button variant="goldOutline" size="sm" asChild>
+            <Link to="/product">Investment</Link>
           </Button>
         </div>
       </div>

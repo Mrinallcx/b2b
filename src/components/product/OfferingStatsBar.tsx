@@ -1,22 +1,22 @@
 const stats = [
-  { value: "$25T+", label: "Global Commodity Market" },
-  { value: "$2B+", label: "Initial Launch Target" },
-  { value: "30,000+", label: "Tokenized Assets Listed (B2C Marketplace)" },
-  { value: "2023", label: "Platform Technology Since" },
+  { value: "$2B+ USD", label: "Total Offering Size" },
+  { value: "300M COPTT", label: "Token Supply" },
+  { value: "30%", label: "Discount to Futures" },
+  { value: "48 Months", label: "Redemption Period" },
 ];
 
-const StatsBar = () => {
+const OfferingStatsBar = () => {
   return (
-    <section className="bg-card border-y border-border py-12">
+    <section className="bg-background border-b border-border py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="text-center animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-3xl md:text-4xl font-light text-gradient-gold mb-2">
+              <div className="text-2xl md:text-3xl font-light text-gradient-gold mb-2">
                 {stat.value}
               </div>
               <div className="text-sm text-muted-foreground">
@@ -30,4 +30,4 @@ const StatsBar = () => {
   );
 };
 
-export default StatsBar;
+export default OfferingStatsBar;

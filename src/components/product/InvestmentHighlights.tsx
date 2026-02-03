@@ -1,35 +1,45 @@
-import { Shield, TrendingUp, Lock, Globe, Coins, BarChart3 } from "lucide-react";
+import { Coins, Percent, Building2, FileCheck, Gauge, Package, Flame, ShieldCheck } from "lucide-react";
 
 const highlights = [
   {
-    icon: Shield,
-    title: "Asset-Backed Security",
-    description: "Each token is backed by physical copper stored in certified warehouses with full insurance coverage."
-  },
-  {
-    icon: TrendingUp,
-    title: "Attractive Yield",
-    description: "Projected annual returns of 8.5% through strategic copper trading and storage optimization."
-  },
-  {
-    icon: Lock,
-    title: "Regulatory Compliant",
-    description: "Fully compliant with SEC regulations and structured under established securities law."
-  },
-  {
-    icon: Globe,
-    title: "Global Accessibility",
-    description: "Invest from anywhere in the world with 24/7 liquidity through our trading platform."
-  },
-  {
     icon: Coins,
-    title: "Low Minimum Investment",
-    description: "Start with as little as $1,000, making institutional-grade investments accessible to all."
+    title: "Tokenized Copper Backing",
+    description: "Each COPTT token represents 1 lb of future LME Grade A copper."
   },
   {
-    icon: BarChart3,
-    title: "Transparent Reporting",
-    description: "Real-time portfolio tracking and quarterly audited reports for complete transparency."
+    icon: Percent,
+    title: "Built-In Pricing Advantage",
+    description: "Tokens are offered at a 30% discount to copper futures pricing."
+  },
+  {
+    icon: Building2,
+    title: "Institutional Mining Partnership",
+    description: "Partnered with a leading NYSE-listed mining company."
+  },
+  {
+    icon: FileCheck,
+    title: "Verified Resource & Output",
+    description: "Backed by geological certification and ongoing production reporting."
+  },
+  {
+    icon: Gauge,
+    title: "Real-Time Oracle Pricing",
+    description: "Oracle-driven pricing ensures live transparency and market alignment."
+  },
+  {
+    icon: Package,
+    title: "Physical Settlement Option",
+    description: "Eligible investors can opt for physical settlement via warehouse warrants."
+  },
+  {
+    icon: Flame,
+    title: "Deflationary Supply Mechanism",
+    description: "Tokens are burned upon redemption, reducing supply and increasing scarcity."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Regulatory-First Compliance",
+    description: "Full KYC/AML compliance with accredited investor verification."
   }
 ];
 

@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductHero from "@/components/product/ProductHero";
-import KeyMetricsBar from "@/components/product/KeyMetricsBar";
+import OfferingStatsBar from "@/components/product/OfferingStatsBar";
 import InvestmentHighlights from "@/components/product/InvestmentHighlights";
 import TokenStructure from "@/components/product/TokenStructure";
 import MarketOpportunity from "@/components/product/MarketOpportunity";
@@ -15,7 +15,7 @@ const Product = () => {
       <Header />
       <main>
         <ProductHero />
-        <KeyMetricsBar />
+        <OfferingStatsBar />
         
         {/* Main content with sticky sidebar */}
         <div className="container mx-auto px-6 py-16">

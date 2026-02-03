@@ -1,25 +1,20 @@
-import { Shield, Zap, Globe, Lock } from "lucide-react";
+import { Shield, Zap, Globe } from "lucide-react";
 
 const values = [
   {
     icon: Zap,
-    title: "Lightning Fast",
-    description: "Experience unparalleled speed with our optimized infrastructure designed for enterprise-grade performance."
-  },
-  {
-    icon: Shield,
-    title: "Bank-Grade Security",
-    description: "Your data is protected with military-grade encryption and compliance with global security standards."
+    title: "Instant Settlement",
+    description: "Replace 5–30 day settlement cycles with real-time, blockchain-powered transactions. Free up capital and eliminate counterparty delays."
   },
   {
     icon: Globe,
-    title: "Global Scale",
-    description: "Deploy across multiple regions with our distributed network spanning over 50 countries worldwide."
+    title: "24/7 Global Liquidity",
+    description: "Trade tokenized commodities around the clock on digital markets. No exchange hours, no borders, no waiting."
   },
   {
-    icon: Lock,
-    title: "Full Compliance",
-    description: "Stay compliant with SOC 2, GDPR, HIPAA, and other regulatory requirements out of the box."
+    icon: Shield,
+    title: "Compliant & Transparent",
+    description: "Full KYC/AML verification, geological certification, regulatory compliance, and real-time oracle-driven pricing. Institutional-grade from day one."
   }
 ];
 
@@ -33,16 +28,15 @@ const ValueProposition = () => {
             Why Choose Us
           </span>
           <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
-            Built for Enterprise Excellence
+            Why Tokenized Commodities?
           </h2>
           <p className="text-muted-foreground">
-            Our platform combines cutting-edge technology with enterprise-grade reliability 
-            to power your business operations.
+            Traditional commodity infrastructure is outdated paper based, slow settlements, locked capital, fragmented markets. Tokenization changes everything.
           </p>
         </div>
 
         {/* Values Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map((value, index) => (
             <div 
               key={index}

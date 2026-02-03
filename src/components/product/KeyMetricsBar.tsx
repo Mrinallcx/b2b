@@ -1,8 +1,8 @@
-const metrics = [
-  { value: "$50M", label: "Target Raise" },
-  { value: "8.5%", label: "Projected Yield" },
-  { value: "24 Mo", label: "Investment Term" },
-  { value: "AAA", label: "Security Rating" },
+const tags = [
+  "Base Metal",
+  "In-Ground Reserves",
+  "NYSE-Listed Partner",
+  "Live Offering",
 ];
 
 const KeyMetricsBar = () => {
@@ -10,17 +10,14 @@ const KeyMetricsBar = () => {
     <section className="bg-card border-y border-border py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {metrics.map((metric, index) => (
+          {tags.map((tag, index) => (
             <div 
               key={index} 
               className="text-center animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-3xl md:text-4xl font-light text-gradient-gold mb-2">
-                {metric.value}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                {metric.label}
+              <div className="text-xl md:text-2xl font-light text-gradient-gold">
+                {tag}
               </div>
             </div>
           ))}
