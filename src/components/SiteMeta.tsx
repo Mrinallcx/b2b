@@ -5,7 +5,7 @@ const DESCRIPTION =
   "Toto Finance is the global infrastructure for tokenized commodities. Trade tokenized gold, silver, diamonds, and energy assets with Toto Finance.";
 const KEYWORDS =
   "Toto Finance, tokenized commodities, commodity tokenization, asset-backed tokenization, tokenized metals, tokenized energy, tokenized gold, tokenized silver, tokenized diamonds, tokenized copper, real world assets, RWA infrastructure, digital commodities, on-chain settlement, commodity tokenization platform, physical asset tokenization, digital ownership, Liechtenstein tokenization, LCX validation, institutional tokenization, gold bar, silver bar, platinum bar";
-const OG_IMAGE = "https://lovable.dev/opengraph-image-p98pqg.png";
+const OG_IMAGE = "https://totofinance.co/Og%20Image.jpg";
 
 const SiteMeta = () => (
   <Helmet>
