@@ -46,10 +46,7 @@ const DisclaimerModal = ({ onAccept }: DisclaimerModalProps) => {
                 This platform does not constitute an offer or solicitation to purchase securities in any jurisdiction where such offers are prohibited.
               </p>
               <p>
-                Investment in tokenized assets involves significant risks, including the potential loss of the entire invested capital. Past performance does not guarantee future results.
-              </p>
-              <p>
-                By proceeding, you confirm that you are an accredited investor and agree to our Terms of Service and Privacy Policy.
+                Investment in tokenized assets involves significant risks, including the potential loss of the entire invested capital. Past performance does not guarantee future results. By proceeding, you confirm that you are an accredited investor and agree to our Terms of Service and Privacy Policy.
               </p>
             </div>
           </div>
