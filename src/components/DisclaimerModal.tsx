@@ -32,25 +32,25 @@ const DisclaimerModal = ({ onAccept }: DisclaimerModalProps) => {
           <div className="mb-6">
             <div className="w-12 h-1 bg-primary rounded-full mb-6" />
             <h2 className="text-2xl font-light tracking-tight mb-2">
-              Welcome
+              Important Legal Information
             </h2>
-            <p className="text-muted-foreground text-sm">
-              Please review and accept our terms before continuing
-            </p>
           </div>
 
           {/* Content */}
           <div className="space-y-4 mb-8">
-            <div className="bg-secondary/50 rounded-md p-4 text-sm text-muted-foreground leading-relaxed">
-              <p className="mb-3">
-                By accessing this website, you acknowledge and agree to the following:
+            <div className="bg-secondary/50 rounded-md p-4 text-sm text-muted-foreground leading-relaxed space-y-3">
+              <p>
+                The products and services described on this platform are intended exclusively for accredited and institutional investors. They may not be eligible or suitable for sale in all jurisdictions.
               </p>
-              <ul className="space-y-2 list-disc list-inside">
-                <li>The information provided is for general purposes only</li>
-                <li>We collect cookies and analytics data to improve your experience</li>
-                <li>You agree to our Privacy Policy and Terms of Service</li>
-                <li>All content is protected under applicable copyright laws</li>
-              </ul>
+              <p>
+                This platform does not constitute an offer or solicitation to purchase securities in any jurisdiction where such offers are prohibited.
+              </p>
+              <p>
+                Investment in tokenized assets involves significant risks, including the potential loss of the entire invested capital. Past performance does not guarantee future results.
+              </p>
+              <p>
+                By proceeding, you confirm that you are an accredited investor and agree to our Terms of Service and Privacy Policy.
+              </p>
             </div>
           </div>
 
@@ -62,14 +62,9 @@ const DisclaimerModal = ({ onAccept }: DisclaimerModalProps) => {
               className="flex-1"
               onClick={onAccept}
             >
-              Accept & Continue
+              I Accept & Continue
             </Button>
           </div>
-
-          {/* Footer note */}
-          <p className="text-xs text-muted-foreground mt-4 text-center">
-            By clicking "Accept & Continue", you agree to our terms
-          </p>
         </div>
       </div>
     </div>
